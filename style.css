@@ -85,9 +85,12 @@ nav .navigation ul li a {
   transition: 0.3s ease;
   text-decoration: none;
 }
-
+nav .navigation ul li a.active,
 nav .navigation ul li a:hover {
   color: #fdc93b;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }
 
 /* Home */
@@ -455,6 +458,95 @@ footer .copyright .profile-links i:hover {
   transition: 0.3s ease;
 }
 /* About Page */
+#about {
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)),
+    url("images/back1.jpg");
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  justify-content: center;
+  padding-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+#about h2 {
+  font-size: 2.2rem;
+  color: white;
+  letter-spacing: 1px;
+}
+
+#about-container {
+  display: flex;
+  align-items: center;
+  padding: 8vw 8vw 2vw 8vw;
+}
+
+#about-container .about-img {
+  width: 60%;
+  padding-right: 60px;
+}
+
+#about-container .about-img img {
+  width: 100%;
+}
+
+#about-container .about-text {
+  /* width: 40%; */
+}
+
+#about-container .about-text h2 {
+  color: #29303b;
+  padding-bottom: 15px;
+}
+
+#about-container .about-text p {
+  color: #686f7a;
+  font-weight: 300;
+}
+
+#about-container .about-text .about-featured {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+#about-container .about-text .about-featured img {
+  width: 50px;
+  margin-right: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+#about-container .about-text .about-featured .feature-text {
+  width: 90%;
+}
+
+#about-container .about-text .about-featured .feature-text h5 {
+  font-size: 16px;
+  color: #29303b;
+}
+
+#trusted {
+  text-align: center;
+  padding: 8vw;
+}
+
+#trusted .trusted-images {
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#trusted .trusted-images img {
+  width: 90px;
+  height: auto;
+}
 
 /* Blog Page */
 
@@ -551,6 +643,38 @@ footer .copyright .profile-links i:hover {
 
   footer .copyright .profile-links {
     margin-top: 15px;
+  }
+
+  /* About Page */
+  #about-container {
+    display: flex;
+    align-items: center;
+    padding: 8vw 4vw 2vw 4vw;
+    flex-direction: column;
+  }
+
+  #about-container .about-img {
+    padding-right: 0px;
+    width: 100%;
+  }
+
+  #about-container .about-text {
+    padding-bottom: 20px;
+    width: 100%;
+  }
+
+  #trusted .trusted-images {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  #trusted .trusted-images img {
+    width: 60px;
+    height: auto;
+    margin: 10px 15px;
   }
 }
 

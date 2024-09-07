@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <img src="images/logo.svg" alt="" />
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <!-- About Page -->
+    <section id="about">
+      <h2>About TechEduca</h2>
+    </section>
+    <section id="about-container">
+      <div class="about-img">
+        <img src="images/a.png" alt="" />
+      </div>
+      <div class="about-text">
+        <h2>
+          Welcome to TechEduca. Enhance your skills with the best online school.
+        </h2>
+        <p>
+          You can start and finish one of these popular courses in under a day -
+          for free! Check out the list below. Try out a course for free.
+        </p>
+        <div class="about-featured">
+          <img src="images/fe1.png" alt="" />
+          <div class="featured-text">
+            <h5>400+ Courses</h5>
+            <p>
+              You can start and finish one of the popular courses within 8
+              months.
+            </p>
+          </div>
+        </div>
+        <div class="about-featured">
+          <img src="images/fe2.png" alt="" />
+          <div class="featured-text">
+            <h5>Lifetime Access</h5>
+            <p>
+              You can start and finish one of the popular courses within 8
+              months.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <h1>News and Features</h1>
+      <p>Find out the latest news and events happening on and off campus</p>
+      <div class="feature-base">
+        <div class="feature-box">
+          <h2><i class="fas fa-graduation-cap"></i> Scholarship Facility</h2>
+          <p>One make</p>
+        </div>
+        <div class="feature-box">
+          <h2><i class="fa-solid fa-certificate"></i> Online Courses</h2>
+          <p>One make</p>
+        </div>
+        <div class="feature-box">
+          <h2><i class="fas fa-award"></i> Global Awards</h2>
+          <p>One make</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="trusted">
+      <h1>Trusted By</h1>
+      <p>Here are some of our trusted members</p>
+      <div class="trusted-images">
+        <img src="images/trust (1).png" alt="" />
+        <img src="images/trust (2).png" alt="" />
+        <img src="images/trust (3).png" alt="" />
+        <img src="images/trust (4).png" alt="" />
+        <img src="images/trust (5).png" alt="" />
+        <img src="images/trust (6).png" alt="" />
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-col">
+        <h3>Top Products</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Service</li>
+      </div>
+      <div class="footer-col">
+        <h3>Top Products</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Service</li>
+      </div>
+      <div class="footer-col">
+        <h3>Top Products</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Service</li>
+      </div>
+      <div class="footer-col">
+        <h3>Top Products</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Service</li>
+      </div>
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>Subscribe to our newsletter</p>
+        <div class="subscribe">
+          <input type="text" placeholder="Your email" id="" />
+          <a class="newsletter" href="#">Subscribe</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>Copyright &copy; 2024 All Rights Reserved. Made by wrobersone</p>
+        <div class="profile-links">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>
