@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <a href="/"><img src="images/logo.svg" alt="" /></a>
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a class="active" href="course.html">Course</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img id="menu-btn" src="images/menu.png" alt="" />
+      </div>
+    </nav>
+
+    <!-- Blog Page -->
+    <section id="about">
+      <h2>Enroll in Our Popular Course</h2>
+    </section>
+
+    <section id="course-info">
+      <div class="overview">
+        <img class="course-img" src="images/c1.jpg" alt="" />
+        <div class="course-header">
+          <div class="course-title">
+            <h2>JavaScript Beginner Course</h2>
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
+            </div>
+            <p>
+              Modern JavaScript takes you from a beginner level all the way to
+              expert. This is a must-have resource for 2024.
+            </p>
+          </div>
+          <span>$49.99</span>
+        </div>
+        <h3>Instructor</h3>
+        <div class="tutor">
+          <img src="images/c4.jpg" alt="" />
+          <div class="tutor-details">
+            <h5>John Doe</h5>
+            <p>Software Engineer at Google</p>
+          </div>
+        </div>
+        <hr />
+        <h3>Course Overview</h3>
+        <p>
+          JavaScript is a scripting or programming language that allows you to
+          implement complex features on web pages — every time a web page does
+          more than just sit there and display static information for you to
+          look at — displaying timely content updates, interactive maps,
+          animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet
+          that JavaScript is probably involved. It is the third layer of the
+          layer cake of standard web technologies, two of which (HTML and CSS)
+          we have covered in much more detail in other parts of the Learning
+          Area.
+        </p>
+        <hr />
+        <h3>What You'll Learn</h3>
+        <div class="learn-checklist">
+          <p>
+            <i class="far fa-check-circle"></i> JavaScript from scratch -
+            beginner to advanced
+          </p>
+          <p>
+            <i class="far fa-check-circle"></i> Arrays, Functions, Objects and
+            Variables
+          </p>
+          <p>
+            <i class="far fa-check-circle"></i> Modern JavaScript Development
+            Concepts and Core Features
+          </p>
+          <p>
+            <i class="far fa-check-circle"></i> Project-driven learning with
+            plenty of examples
+          </p>
+          <p><i class="far fa-check-circle"></i> Object-oriented programming</p>
+          <p>
+            <i class="far fa-check-circle"></i> How to apply and interview for
+            JavaScript Development jobs
+          </p>
+        </div>
+      </div>
+
+      <div class="enroll">
+        <h3>This Course Includes:</h3>
+        <p><i class="far fa-check-circle"></i> 52 Hours of Video</p>
+        <p><i class="far fa-check-circle"></i> 75 Articles</p>
+        <p><i class="far fa-check-circle"></i> Downloadable Resources</p>
+        <p><i class="far fa-check-circle"></i> Lifetime Access</p>
+        <p><i class="far fa-check-circle"></i> Access on Mobile and TV</p>
+        <p><i class="far fa-check-circle"></i> Assignments</p>
+        <p><i class="far fa-check-circle"></i> Certificate of Completion</p>
+        <div class="enroll-btn">
+          <a href="#">Enroll Now</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-col">
+        <h3>Top Products</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Service</li>
+      </div>
+      <div class="footer-col">
+        <h3>Top Products</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Service</li>
+      </div>
+      <div class="footer-col">
+        <h3>Top Products</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Service</li>
+      </div>
+      <div class="footer-col">
+        <h3>Top Products</h3>
+        <li>Manage Reputation</li>
+        <li>Power Tools</li>
+        <li>Managed Website</li>
+        <li>Marketing Service</li>
+      </div>
+      <div class="footer-col">
+        <h3>Newsletter</h3>
+        <p>Subscribe to our newsletter</p>
+        <div class="subscribe">
+          <input type="text" placeholder="Your email" id="" />
+          <a class="newsletter" href="#">Subscribe</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>Copyright &copy; 2024 All Rights Reserved. Made by wrobersone</p>
+        <div class="profile-links">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      $("#menu-btn").click(function () {
+        $("nav .navigation ul").addClass("active");
+      });
+      $("#menu-close").click(function () {
+        $("nav .navigation ul").removeClass("active");
+      });
+    </script>
+  </body>
+</html>

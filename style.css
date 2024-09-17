@@ -34,7 +34,7 @@ h6 {
 
 /* Navigation */
 nav {
-  background-color: white;
+  background-color: beige;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   display: flex;
   align-items: center;
@@ -458,8 +458,7 @@ footer .copyright .profile-links i:hover {
   transition: 0.3s ease;
 }
 /* About Page */
-#about,
-#blog {
+#about {
   align-items: center;
   background-size: cover;
   background-position: center;
@@ -621,9 +620,269 @@ footer .copyright .profile-links i:hover {
   padding-bottom: 30px !important;
 }
 
-/* Course_inner */
+/* Course_info */
+#course-info {
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-start;
+  padding: 8vw;
+}
+
+#course-info h3 {
+  padding: 35px 0 25px 0;
+  color: #29303b;
+}
+
+#course-info p {
+  color: #64626e;
+}
+
+#course-info hr {
+  height: 1px;
+  background: rgba(236, 226, 229, 0.5);
+  margin-top: 40px;
+}
+
+#course-info .overview {
+  width: 70%;
+}
+
+#course-info .overview .course-img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+#course-info .overview .course-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#course-info .overview .course-header .course-title {
+  width: 70%;
+}
+
+#course-info .overview .course-header .course-title h2 {
+  color: #29303b;
+}
+
+#course-info .overview .course-header .course-title .star {
+  margin: 6px 0;
+}
+
+#course-info .overview .course-header .course-title .star i {
+  color: #fdc93b;
+  font-size: 0.9rem;
+}
+
+#course-info .overview .course-header .course-title p {
+  font-size: 15px;
+}
+
+#course-info .overview .course-header span {
+  padding: 16px 22px;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #5838fc;
+  background-color: rgba(88, 56, 252, 0.1);
+}
+
+#course-info .learn-checklist p {
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+
+#course-info .learn-checklist p i {
+  color: #5838fc;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+#course-info .tutor {
+  display: flex;
+}
+
+#course-info .tutor img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+#course-info .tutor h5 {
+  font-size: 15px;
+}
+
+#course-info .enroll {
+  height: 100%;
+  width: 300px;
+  padding: 0 30px 30px 30px;
+  border-radius: 11px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#course-info .enroll h3 {
+  padding-bottom: 10px;
+}
+
+#course-info .enroll p {
+  font-size: 15px;
+  color: #64626e;
+  margin: 15px 0;
+}
+
+#course-info .enroll p i {
+  font-weight: 500;
+  color: #654ce4;
+  margin-right: 18px;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+}
+
+#course-info .enroll .enroll-btn {
+  padding: 25px 0 20px 0;
+  margin: auto;
+  text-align: center;
+}
+
+#course-info .enroll .enroll-btn a {
+  background: rgb(50, 50, 136);
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding: 13px 35px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+#course-info .enroll .enroll-btn a:hover {
+  background: rgb(21, 21, 100);
+  transition: 0.3s ease;
+}
 
 /* contact */
+#contact {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 8vw;
+}
+
+#contact .contact-us {
+  width: 350px;
+}
+
+#contact .contact-us h2 {
+  color: #2c234d;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 0.8;
+  margin-bottom: 16px;
+}
+
+#contact .contact-us p {
+  color: #686875;
+  line-height: 24px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  /* border-bottom: 1px solid #686875; */
+}
+
+#contact .contact-us .contact-details div {
+  display: flex;
+}
+
+#contact .contact-us .contact-details div .ico {
+  font-size: 16px;
+  line-height: 22px;
+  color: #5838fc;
+  margin-right: 5px;
+}
+
+#contact .contact-us .contact-details .profile-links i {
+  margin-right: 5px;
+}
+
+#contact .form {
+  width: 60%;
+  background: lightgrey;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+#contact .form h4 {
+  font-size: 24px;
+  color: #2c234d;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+
+#contact .form p {
+  color: #413c3c;
+  line-height: 24px;
+  padding-bottom: 25px;
+}
+
+#contact .form .form-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#contact .form .form-container input {
+  width: 48%;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 3px;
+  border: none;
+  background: white;
+  color: #7b838a;
+  outline: none;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+#contact .form .form-control input,
+#contact .form .form-control textarea {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 3px;
+  border: none;
+  background: white;
+  color: #7b838a;
+  outline: none;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+#contact .form button {
+  font-size: 0.9rem;
+  padding: 13px 25px;
+  background: rgb(21, 21, 100);
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  color: white;
+}
+
+#map {
+  width: 100%;
+  height: 70vh;
+}
+
+#map iframe {
+  width: 100%;
+  height: 100%;
+}
 
 /* responsive */
 
@@ -769,6 +1028,37 @@ footer .copyright .profile-links i:hover {
     height: 50vh;
     object-fit: cover;
   }
+
+  /* Course Info */
+  #course-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8vw 4vw;
+  }
+
+  #course-info .overview {
+    width: 100%;
+  }
+
+  #course-info .overview .course-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #course-info .enroll {
+    margin-top: 25px;
+  }
+
+  /* Contact */
+  #contact {
+    padding: 8vw 4vw;
+  }
+
+  #contact .contact-us {
+    width: 250px;
+  }
 }
 
 @media (max-width: 475px) {
@@ -828,6 +1118,50 @@ footer .copyright .profile-links i:hover {
     width: 100%;
     height: 50vh;
     object-fit: cover;
+  }
+
+  #course-info .overview .course-header .course-title {
+    width: 50%;
+  }
+
+  #course-info .overview .course-header .course-title h2 {
+    font-size: 22px;
+  }
+
+  #course-info .overview .course-header span {
+    font-size: 22px;
+  }
+
+  #course-inner .enroll {
+    width: 100%;
+  }
+
+  #contact {
+    flex-direction: column;
+    padding: 8vw 4vw;
+    align-content: flex-start;
+    justify-content: flex-start;
+  }
+
+  #contact .contact-us {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  #contact .form {
+    width: 100%;
+    padding: 40px 30px;
+  }
+
+  #contact .form .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  #contact .form .form-container input {
+    width: 100%;
   }
 }
 
